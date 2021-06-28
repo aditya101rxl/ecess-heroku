@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ECESS-Home</title>
+</head>
+{{>header}}
+
+<body>
+
+    {{!-- jumbotron is always at top to introduce someone/somethings --}}
+    <div class="jumbotron jumbotron-fluid">
+        <div class="row jumbo py-4" style="margin: -20px;">
+            <div class="col-4">
+                <img src="/images/LogoECESS.png" alt="logo" style="max-width: 200px; max-height: 200px;">
+            </div>
+            <div class="col-8">
+                <div class="container">
+                    <h1 class="display-4" style="font-weight: 400;">ECESS</h1>
+                    <p class="lead">Electronics & Communication Engineering Student Society</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{!-- for navigation --}}
+    <div id="home" style=" display: block;"></div>
+
+    {{!-- navbar from bootstrap start --}}
+    {{>navbar}}
+    {{!-- navbar from bootstrap end --}}
+
+    {{!-- home section start --}}
+    <div class="cover">
+        <welcome> Welcome&nbsp;<span>Guest.</span></welcome>
+        <welcome> Welcome To&nbsp;<span>ECESS.</span></welcome>
+    </div>
+    {{!-- home section end --}}
+
+    <div class="main">
+
+        {{!-- events section start --}}
+        {{>events}}
+        {{!-- events section end --}}
+
+
+        {{!-- Message section start --}}
+        {{>message}}
+        {{!-- Message section end --}}
+
+
+        {{!-- Galary section start --}}
+        {{>gallery}}
+        {{!-- Galary section end --}}
+
+
+        {{!-- Our Team section start --}}
+        {{>members}}
+        {{!-- Our Team section end --}}
+    </div>
+
+
+    {{!-- Footer section start --}}
+    {{>footer}}
+    {{!-- Footer section end --}}
+
+
+    {{!--all scripts file start--}}
+    {{>scripts}}
+    {{!--all scripts file end--}}
+</body>
+
+</html>
